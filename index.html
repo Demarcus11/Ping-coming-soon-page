@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="container content-flow">
+      <header class="ping-header content-flow">
+        <div class="logo-details content-flow">
+          <img class="ping-logo" src="images/logo.svg" alt="Ping Logo" />
+
+          <div class="title-subtitle content-flow">
+            <h1 class="ping-title">We are launching <span>soon!</span></h1>
+            <p class="ping-subtitle">Subscribe and get notified</p>
+          </div>
+        </div>
+
+        <form class="ping-form" action="#">
+          <div class="form-group flex-group">
+            <div class="input-message flex-group">
+              <input
+                class="ping-input"
+                type="email"
+                placeholder="Your email address"
+                onkeyup="validEmail()"
+              />
+              <p class="error-message"></p>
+            </div>
+
+            <button class="notify-button" type="submit">Notify Me</button>
+          </div>
+        </form>
+      </header>
+
+      <div class="ping-image">
+        <img src="images/illustration-dashboard.png" alt="" />
+      </div>
+
+      <footer class="ping-footer content-flow">
+        <ul class="socials flex-group">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+        <p>&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
